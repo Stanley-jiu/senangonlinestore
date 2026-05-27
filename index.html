@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senang Online Store</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; }
+        header { background: white; color: black; padding: 20px; text-align:left; display:flex; align-items: center; justify-content: space-between; }
+        nav a { color: black; margin: 0 15px; text-decoration: none; font-size: 20px; }
+        .hero { padding: 30px; text-align: center; background: lightgray; }
+        .services { display: flex; justify-content: center; gap: 20px; padding: 40px; }
+        .card { background: white; padding: 20px; width: 250px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        footer { background: #343a40; color: white; text-align: center; padding: 15px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display: flex; align-items: center;">
+        <img src="senang_logo.jpeg" alt="" width="220" height="200">
+        
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="senangonline_services.html">Services</a>
+        <a href="senangonline_aboutus.html">About</a>
+        <a href="senangonline_contactus.html">Contact</a>
+    </nav>
+</header>
+
+
+<div class="hero"> 
+    <p style="font-size: 20px;"><b>Welcome to Senang Online Store (Malaysia)</b> <br><br>
+        We offers affordable and quality kitchen essentials to make everyday cooking easier and more enjoyable.</p>
+</div>
+
+<style>
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 40px;
+    }
+    
+    .product-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .product-card img {
+        max-width:"100%"; 
+        max-height:"100%";
+        object-fit: cover;
+    }
+    
+    .product-name {
+        font-size: 16px;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+    
+    .product-price {
+        color: green;
+        margin-bottom: 15px;
+    }
+    </style>
+    
+    <section>
+        <h2 style="color:darkblue; font-size: 30px; text-align: center;" ><b>New Arrivals</b></h2>
+        <div class="products">
+            
+            <div class="product-card">
+                <img src="pot.jpeg" alt="" width="230" height="200">
+                <div class="product-name"><br>Cookware</div>
+                <p>Frying Pan, Soup Pot</p>
+                <div class="product-price">RM179</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="dinnerware.jpeg" alt="" width="230" height="200" >
+                <div class="product-name"><br>Dinnerware</div>
+                <p>Plates, Bowls, Cups</p>
+                <div class="product-price">RM79</div>
+            </div>
+
+            <div class="product-card">
+                <img src="cutiery.jpeg" alt="" width="230" height="250">
+                <div class="product-name"><br>Cutiery</div>
+                <p>Knife Set, Forks, Spoons</p>
+                <div class="product-price">RM99</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="food.jpeg" alt="" width="230" height="250">
+                <div class="product-name"><br>Food Storage</div>
+                <p>Lunch Box, Storage Container</p>
+                <div class="product-price">RM59</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="cleaning.jpeg" alt="" width="250" height="230">
+                <div class="product-name"><br>Cleaning Supplies</div><br>
+                <p>Sponge Holder</p>
+                <div class="product-price">RM49</div>
+            </div>
+    
+            <div class="product-card">
+                <img src="tablemat.jpeg" alt="" width="240" height="230">
+                <div class="product-name"><br>Dining Accessories</div><br>
+                <p>Table Mat</p>
+                <div class="product-price">RM19</div>
+            </div>
+    
+    
+        </div>
+    </section>
+
+    <!--benefit开头-->
+    <style>
+        .why-section {
+            padding: 60px 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        
+        .why-title {
+            font-size: 34px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+        
+        .why-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 25px;
+            max-width: 900px;
+            margin: auto;
+        }
+        
+        .why-box {
+            flex: 1 1 300px;
+            max-width: 350px;
+            padding: 30px;
+            border-radius: 15px;
+            color: rgb(255, 255, 255);
+            text-align: left;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        
+        .why-box:hover {
+            transform: translateY(-8px);
+        }
+        
+        /* 不同颜色 */
+        .box1 {
+            grid-column: 1;
+            grid-row: 1;
+            background: linear-gradient(135deg, #fbc2eb, #a6c1ee);;
+        }
+
+        .box2 {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: 0px; /* 往下错开 */
+            background: linear-gradient(135deg, #fddb92, #d1fdff);
+        }
+
+        .box3 {
+            grid-column: 1;
+            grid-row: 3;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+        }
+        
+        .why-icon {
+            font-size: 35px;
+        }
+        
+        .why-box h3 {
+            margin-top: 15px;
+            font-size: 22px;
+        }
+        
+        .why-box p {
+            margin-top: 15px;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+        </style>
+        
+        <section class="why-section">
+            <h2 class="why-title" style=color:darkblue>Why Choose Us?</h2>
+        
+            <div class="why-container">
+        
+                <!-- BOX 1 -->
+                <div class="why-box box1">
+                    <h3 style=color:darkblue><b>Premium Quality Kitchenware</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;">
+                       We provide durable and reliable kitchen products designed for everyday use. 
+                       <br><br>
+                       Our items combine functionality with modern style to upgrade your cooking experience.
+                    </p>
+                </div>
+        
+                <!-- BOX 2 -->
+                <div class="why-box box2">
+                    <h3 style=color:darkblue><b>Affordable Prices</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;">
+                        Enjoy high-quality kitchen essentials without overspending. 
+                        <br><br>
+                        We carefully select products that offer great value for every household.
+                    </p>
+                </div>
+        
+                <!-- BOX 3 -->
+                <div class="why-box box3">
+                    <h3 style=color:darkblue><b>Fast & Secure Delivery</b></h3>
+                    <p style="color:rgba(32,32,121,0.537); font-size:18px;" >
+                       Your orders are packed carefully and shipped quickly to ensure they arrive in perfect condition. 
+                       <br><br>
+                       We aim to make your shopping experience smooth and worry-free.
+                    </p>
+                </div>
+        
+            </div>
+        </section>
+        <!--benefit的结尾-->
+
+        <!--Testimonial开头-->
+        <style>
+            .testimonial-section {
+                padding: 60px 20px;
+                background: #f8f9fa;
+                text-align: center;
+            }
+            
+            .testimonial-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+                font-weight: bold;
+            }
+            
+            .slider {
+                max-width: 600px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            
+            .slide {
+                min-width: 100%;
+                box-sizing: border-box;
+                padding: 30px;
+                color: black;
+            }
+            
+            .testimonial-box {
+                background: #f9c785;
+                border-radius: 12px;
+                padding: 25px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+            
+            .testimonial-text {
+                font-style: italic;
+                margin-bottom: 15px;
+            }
+            
+            .testimonial-name {
+                font-weight: bold;
+                color: black;
+            }
+            </style>
+            
+            <section class="testimonial-section">
+                <h2 class="testimonial-title" >What Our Customers Comment...</h2>
+            
+                <div class="slider">
+                    <div class="slides" id="slides">
+            
+                        <!-- Testimonial 1 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“Great quality products and the packaging was very secure. My kitchen looks much more organized now!”</p>
+                                <div class="testimonial-name">— Ethan Lee</div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 2 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“I love the modern design and affordable prices. The delivery was also faster than expected.”</p>
+                                <div class="testimonial-name">— Chloe Tan</div>
+                            </div>
+                        </div>
+            
+                        <!-- Testimonial 3 -->
+                        <div class="slide">
+                            <div class="testimonial-box">
+                                <p class="testimonial-text">“The cookware feels premium and very easy to use. Definitely coming back for more kitchen items!”</p>
+                                <div class="testimonial-name">— Ryan Cheong</div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+            
+            <script>
+            let index = 0;
+            const slides = document.getElementById("slides");
+            const totalSlides = 3;
+            
+            setInterval(() => {
+                index++;
+                if (index >= totalSlides) {
+                    index = 0;
+                }
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            }, 3500);
+            </script>
+            <!--Testimonial结尾-->
+
+
+
+<section id="contact" style="text-align:center; padding:30px;">
+    <h2>Contact Us</h2>
+    <p>Email: ericislkandr0413@gmail.com</p>
+    <p>Phone: 011-64600413</p>
+</section>
+
+<footer>
+    Copyright &copy; Powered by 2026 SENANG ONLINE STORE (MALAYSIA) SDN BHD | <br>
+    202601013024 (1675122-W)
+</footer>
+
+</body>
+</html>
